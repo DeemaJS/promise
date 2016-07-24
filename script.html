@@ -1,0 +1,10 @@
+<script>
+  function wait(ms) {
+    return new Promise(function (resolve) {
+      console.log(this);
+      windows.setTimeout(function() {
+        resolve();
+      },3000);
+    }) 
+  }
+</script>
